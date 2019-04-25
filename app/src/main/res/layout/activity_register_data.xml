@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <RelativeLayout
+        android:id="@+id/containerLayout"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/npmLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/lblNpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NPM"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/editTextNpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_below="@+id/lblNpm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:textColor="@color/colorAccent"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/editTextNpm"
+            android:id="@+id/lineNpm"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"></LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/npmLayout"
+            android:id="@+id/namaLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/lblNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/lblNama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textColor="@color/colorAccent"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/editTextNama"
+                android:id="@+id/lineNama"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"></LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/namaLayout"
+            android:id="@+id/emailLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/lblEmail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textColor="@color/colorAccent"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/editTextEmail"
+                android:id="@+id/lineEmail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"></LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/emailLayout"
+            android:id="@+id/passwordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/lblPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_below="@+id/lblPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textColor="@color/colorAccent"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/editTextPassword"
+                android:id="@+id/linePassword"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"></LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/passwordLayout"
+            android:id="@+id/confirmPasswordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/lblConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi Password"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_below="@+id/lblConfirmPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:textColor="@color/colorAccent"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/editTextConfirmPassword"
+                android:id="@+id/lineConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"></LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_primary_round_corner"
+            android:text="DAFTAR"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="80dp"
+            android:layout_below="@+id/confirmPasswordLayout"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
